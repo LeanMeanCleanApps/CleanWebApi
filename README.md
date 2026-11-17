@@ -1,4 +1,4 @@
-[![Clean Web API](https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/banners/png/webapi.png)](https://leanmeancleanapps.github.io/webapi/)
+[![Clean Web API](https://raw.githubusercontent.com/LeanMeanCleanApps/brand/main/assets/banners/png/webapi.png)](https://leanmeanclean.dev/webapi/)
 
 [![Build Pipeline](https://img.shields.io/github/actions/workflow/status/LeanMeanCleanApps/CleanWebApi/build-pipeline.yml?branch=main&label=Build%20Pipeline&logo=github&style=for-the-badge)](https://github.com/LeanMeanCleanApps/CleanWebApi/actions/workflows/build-pipeline.yml)
 [![NuGet](https://img.shields.io/nuget/v/CleanWebApi.Template?label=NuGet&logo=nuget&logoColor=white&style=for-the-badge)](https://www.nuget.org/packages/CleanWebApi.Template)
@@ -7,9 +7,9 @@
 
 A `dotnet new` template for an HTTP API using [ASP.NET Core controllers](https://learn.microsoft.com/aspnet/core/web-api/) in .NET 10, built with a streamlined Clean Architecture. All the layers you need, none of the ceremony you don't.
 
-It's one of five [Lean Mean Clean Apps](https://leanmeancleanapps.github.io/) templates. They share the same Application and Infrastructure layers and differ only in how they face the world. Same genes, different haircuts.
+It's one of five [Lean Mean Clean Apps](https://leanmeanclean.dev/) templates. They share the same Application and Infrastructure layers and differ only in how they face the world. Same genes, different haircuts.
 
-The guides, the reference and the reasoning behind every opinion live at **[leanmeancleanapps.github.io/webapi](https://leanmeancleanapps.github.io/webapi/)**. This is the version for people who skim. We see you.
+The guides, the reference and the reasoning behind every opinion live at **[leanmeanclean.dev/webapi](https://leanmeanclean.dev/webapi/)**. This is the version for people who skim. We see you.
 
 ## Get started
 
@@ -79,7 +79,7 @@ Open [Scalar](https://github.com/scalar/scalar) at <http://localhost:7340/scalar
 
 No Docker? `dotnet run --project src/Presentation` works too. Every other way to run it, from plain `docker run` to stamping a version into the image, is in [docs/RUN.md](docs/RUN.md).
 
-The API is open unless you ask for authentication. Create the solution with `--include-auth --authority https://login.example.com --audience https://api.example.com` and the movie, author and review endpoints ask for a JWT bearer token. The version endpoint asks for one too. Health checks, the OpenAPI document and Scalar stay open, and Scalar has a spot to paste your token. Leave `--include-auth` out and there's no authentication code in the solution at all, so there's nothing to leave switched off by accident. [Securing the API](https://leanmeancleanapps.github.io/webapi/guides/secure-the-api/) has the details, including how to add it later.
+The API is open unless you ask for authentication. Create the solution with `--include-auth --authority https://login.example.com --audience https://api.example.com` and the movie, author and review endpoints ask for a JWT bearer token. The version endpoint asks for one too. Health checks, the OpenAPI document and Scalar stay open, and Scalar has a spot to paste your token. Leave `--include-auth` out and there's no authentication code in the solution at all, so there's nothing to leave switched off by accident. [Securing the API](https://leanmeanclean.dev/webapi/guides/secure-the-api/) has the details, including how to add it later.
 
 ## What's inside
 
@@ -101,7 +101,7 @@ And around the edges:
 - **The pipeline** builds, checks formatting, tests with a 95% coverage bar, makes sure the packed template still works, runs [CodeQL](https://codeql.github.com), reviews new dependencies and their licences, starts the image to check it actually answers, and scans the container and Dockerfile with [Trivy](https://trivy.dev). Then it sums the lot up in one comment on your pull request, so you know exactly who to blame. Your copy, or a solution from `dotnet new`, gets the format check, build and tests with no accounts, tokens or secrets, so it goes green the moment you push it. The scans stay switched off outside our organisation until you want them, and Jacques can switch them on with you. Trust is earned.
 - **Dependabot** bundles the month's dependency updates into one pull request on the 15th.
 
-The [architecture page](https://leanmeancleanapps.github.io/webapi/explanation/architecture/) has the long version, with full credit to [Jason Taylor's template](https://github.com/jasontaylordev/CleanArchitecture) and [Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for the ideas.
+The [architecture page](https://leanmeanclean.dev/webapi/explanation/architecture/) has the long version, with full credit to [Jason Taylor's template](https://github.com/jasontaylordev/CleanArchitecture) and [Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for the ideas.
 
 ## Releases
 
